@@ -1,0 +1,39 @@
+{
+  "name": "@logly-uk/mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for Logly — privacy-first web analytics. Query stats, breakdowns, funnels and real-time visitors from Claude, Cursor or any MCP client.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "logly-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "logly",
+    "analytics",
+    "web-analytics",
+    "privacy",
+    "claude",
+    "cursor"
+  ],
+  "homepage": "https://logly.uk/mcp/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logly-uk/logly-mcp.git"
+  }
+}
