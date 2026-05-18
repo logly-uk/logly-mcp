@@ -1,6 +1,7 @@
 {
   "name": "@logly-uk/mcp",
-  "version": "1.0.1",
+  "mcpName": "io.github.logly-uk/logly-mcp",
+  "version": "1.0.2",
   "description": "Model Context Protocol server for Logly — privacy-first web analytics. Query stats, breakdowns, funnels and real-time visitors from Claude, Cursor or any MCP client.",
   "license": "MIT",
   "type": "module",

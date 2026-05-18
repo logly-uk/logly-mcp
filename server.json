@@ -3,7 +3,7 @@
   "name": "io.github.logly-uk/logly-mcp",
   "description": "Query your Logly web analytics — traffic, funnels and real-time visitors — from any MCP client.",
   "title": "Logly",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/logly-uk/logly-mcp",
     "source": "github"
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@logly-uk/mcp",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "transport": {
         "type": "stdio"
       },
