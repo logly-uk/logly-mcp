@@ -1,0 +1,44 @@
+{
+  "manifest_version": "0.2",
+  "name": "logly",
+  "display_name": "Logly",
+  "version": "1.0.2",
+  "description": "Query your Logly web analytics — traffic, funnels and real-time visitors — from Claude.",
+  "author": {
+    "name": "Logly",
+    "url": "https://logly.uk"
+  },
+  "homepage": "https://logly.uk/mcp/",
+  "documentation": "https://logly.uk/mcp/",
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/index.js"],
+      "env": {
+        "LOGLY_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "Logly API key",
+      "description": "Create one in Settings → API keys in your Logly dashboard at app.logly.uk.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "tools": [
+    { "name": "logly_list_sites", "description": "List every site in the account with its ID." },
+    { "name": "logly_stats", "description": "Pageviews, sessions, visitors, bounce rate, daily series, previous-period comparison." },
+    { "name": "logly_breakdown", "description": "Top pages, referrers, countries and devices." },
+    { "name": "logly_realtime", "description": "Visitors active right now." },
+    { "name": "logly_events", "description": "Custom event counts." },
+    { "name": "logly_funnels", "description": "A site's conversion funnels and their steps." },
+    { "name": "logly_funnel_results", "description": "Completion and drop-off per funnel step." },
+    { "name": "logly_install_snippet", "description": "The tracking tag to add Logly to a site." }
+  ]
+}
