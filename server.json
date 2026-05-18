@@ -1,7 +1,8 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.logly-uk/logly-mcp",
   "description": "Query your Logly web analytics — traffic, funnels and real-time visitors — from any MCP client.",
+  "title": "Logly",
   "version": "1.0.1",
   "repository": {
     "url": "https://github.com/logly-uk/logly-mcp",
